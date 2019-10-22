@@ -1,23 +1,27 @@
 .hero
   position: relative
+  height: 715px
   background-position: 50% 0   
   background-size: cover
   background-repeat: no-repeat
   &__container
+    position: relative
     padding-top: 52px
     padding-bottom: 30px
-    height: 715px
   &__title
+    margin-bottom: 38px
     color: #fff
     font-family: $oC
     font-weight: 700   
     font-size: 24px
   &__word
-    margin-bottom: 38px
     display: block
     color: #fab500
+    font-size: 64px
     font-weight: 700
     line-height: 1.03 
+    &:first-child
+      margin-top: 5px
   &__exhibits
     margin-bottom: 56px
     color: #FFF
@@ -27,14 +31,45 @@
   &__date
     margin-bottom: 50px
     font-size: 18px
+    text-transform: uppercase
 
   &__date-start
+    margin-bottom: 5px
     color: #FAB500
     font-weight: 700
     text-transform: uppercase
     
   &__date-place
     color: #FFF
-    font-weight: 300 
+    font-weight: 300
 
   // &__social
+
+  &__image
+    position: absolute
+    bottom: 0
+    right: 0
+    width: 885px
+    height: 522px
+    
+  &__image-first,
+  &__image-second,
+  &__image-third
+    position: absolute
+    top: 0
+    display: block
+  
+  &__image-first
+    top: 0
+    left: 0
+
+  &__image-second
+    top: auto
+    bottom: 0
+    left: 200px
+    
+  &__image-third
+    top: 0
+    right: 0
+    @include bg($hero-img-3)
+

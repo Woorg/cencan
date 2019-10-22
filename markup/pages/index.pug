@@ -5,6 +5,14 @@ html(class="no-js", lang="ru")
   include ../blocks/header/header.pug
   
   include ../blocks/hero/hero.pug
+  include ../blocks/call-papers/call-papers.pug
+  include ../blocks/featured/featured.pug
+  include ../blocks/achievements/achievements.pug
+  include ../blocks/stay-connected/stay-connected.pug
+  include ../blocks/sections/sections.pug
+  include ../blocks/cta/cta.pug
+
+
 
   include ../blocks/footer/footer.pug
 
@@ -15,7 +23,16 @@ html(class="no-js", lang="ru")
       |%=symbols=%
       +hero()
       main.page__inner
+        .content
+          +call-papers()
+          +featured()
+        
+        aside.side
+          +achievements()
 
+      +stay-connected()
+      +sections()
+      +cta()
       .page__footer
         +footer()
 
@@ -38,7 +55,7 @@ html(class="no-js", lang="ru")
   //- script(src="//maps.googleapis.com/maps/api/js?key=AIzaSyDDO60TDSumlziHzbybxGGbAEegP7zLX0Y&callback=initMap" async defer)
   script(src='%=static=%js/separate-js/lazyload.min.js')
   script(src='%=static=%js/separate-js/jquery.min.js')
-    
+
   //- script(src='%=static=%js/separate-js/slick.min.js')
   //- script(src='%=static=%js/separate-js/jquery.magnific-popup.min.js')
 

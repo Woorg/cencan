@@ -18,4 +18,9 @@ mixin hero(data)
           .social__title FOLLOW CEN-CAN
           .social__links-w
             a.social__link(href="#")
-              != pugHelpers.Icon.call(locals, {iconName: 'search-icon', className: 'social__icon', iconWidth: '12', iconHeight: '12'})
+              != pugHelpers.Icon.call(locals, {iconName: 'fb-icon', className: 'social__icon', iconWidth: '12', iconHeight: '12'})
+
+        .hero__image
+          != pugHelpers.Icon.call(locals, {iconName: 'hero-img-1', className: 'hero__image-first', iconWidth: '389', iconHeight: '269'})
+          != pugHelpers.Icon.call(locals, {iconName: 'hero-img-2', className: 'hero__image-second', iconWidth: '410', iconHeight: '384'})
+          img.hero__image-third(src="assets/images/general/hero-img-3.svg", alt="")

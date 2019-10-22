@@ -1,2 +1,49 @@
-// .form
+.form
+  &__field
+    position: relative
+    flex-grow: 1
+    display: flex
+  &__input
+    background: #fff
+    color: #000
+    @include placeholder()
+      color: #000 
+
+  // &__submit
+
+
+.form_search
+  display: flex
+  .form__field
+    height: 22px
+    
+  .form__input
+    border: none
+    padding-left: 5px
+    padding-right: 50px
+    
+    display: none
+    background: #fff 
+    flex-grow: 1
+    width: 0
+    height: 100%
+  .form__submit
+    @include resetbutton()
+    margin-left: 10px
+    width: 70px
+    height: 100%
+    display: flex
+    align-items: center
+    color: #fff
+    font-size: 11px
+    font-weight: 700
+    text-transform: uppercase
+
+  .form__submit-text
+    margin-left: 10px
+    
+
+
+
+
    

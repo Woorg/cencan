@@ -15,12 +15,12 @@ mixin header(data)
         .header__top-controls
           a.header__top-auth(href="#") sign in
           .header__top-search.search
-              form.search__form.form.form_search
-                .form__field
-                  input.form__input(type="text", value="", placeholder="")
-                  button.form__submit(type="submit")
-                    != pugHelpers.Icon.call(locals, {iconName: 'search-icon', className: 'search__icon', iconWidth: '11', iconHeight: '16'})
-                    .form__submit-text search
+            form.search__form.form.form_search(action="", method="get")
+              .form__field
+                input.form__input(type="text", value="", placeholder="")
+                button.form__submit(type="submit")
+                  != pugHelpers.Icon.call(locals, {iconName: 'search-icon', className: 'search__icon', iconWidth: '11', iconHeight: '16'})
+                  .form__submit-text search
 
       .header__body
 
@@ -39,7 +39,7 @@ mixin header(data)
                 a.nav__link(href="#mining") mining
               li.nav__item
                 a.nav__link(href="#forestry") forestry
-              li.nav__item
+              li.nav__item.nav__item_active
                 a.nav__link(href="#energy") energy
               li.nav__item
                 a.nav__link(href="#showfloor") show floor
@@ -47,7 +47,7 @@ mixin header(data)
         .header__place
           .header__place-text september 10-11 2020 thunder bay - ontario
 
-        a.header__button.button.button(href="#") register
+        a.header__button.button.button_biggest(href="#") register
       
 
 

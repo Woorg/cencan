@@ -1,2 +1,46 @@
 mixin call-papers(data)
     .call-papers
+      h2.call-papers__title Call For Papers:
+      .call-papers__text
+        p Cen-Can Expo wwill be oranizing technical sessions (Sept 10-11th). We are asking organizations to submit an abstract detailing your topic. Topics should be focused on technology and innovation that will provide value for the Mining/Forestry/Energy sectors. The show organizers with the support of industry will develop an agenda on the input from participants. Presentations will vary from 20 to 45 minutes. To be eligible complete the form below.  A representative will be in touch 48 hours after we receive your notice of intent.
+      .call-papers__form
+        form.form(action="", method="post")
+          .form__row
+            .form__col
+              .form__col-title I am interested in submitting a topic for the technical sessions on:
+
+              .form__radio-w
+                .form__field.form__field_radio
+                  label.form__label
+                    input.form__radio(type="radio", value="mining", name="topic")
+                    .form__radio-text Mining
+                .form__field.form__field_radio
+                  label.form__label
+                    input.form__radio(type="radio", value="forestry", name="topic")
+                    .form__radio-text Forestry
+
+                .form__field.form__field_radio
+                  label.form__label
+                    input.form__radio(type="radio", value="energy", name="topic")
+                    .form__radio-text Energy
+
+                .form__field.form__field_radio
+                  label.form__label
+                    input.form__radio(type="radio", value="other", name="topic")
+                    .form__radio-text Other
+
+            .form__col
+              .form__row
+                .form__field
+                  input.form__input(type="text", value="", name="name", placeholder="Name:")
+
+                .form__field
+                  input.form__input(type="text", value="", name="company_name", placeholder="Company Name:")
+
+                .form__field
+                  input.form__input(type="text", value="", name="email", placeholder="Email:")
+
+                .form__field
+                  input.form__input(type="text", value="", name="topic_idea", placeholder="Topic Idea:")
+
+              input.form__submit.button.button_big(type="submit", value="submit")
