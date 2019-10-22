@@ -1,0 +1,77 @@
+.header
+  position: absolute
+  z-index: 1
+  top: 0
+  left: 0
+  width: 100%
+  background-color: transparent
+  color: #fff 
+
+  &__top
+    padding-top: 28px
+    padding-bottom: 10px
+    display: flex
+    justify-content: space-between
+  &__top-nav
+    display: flex
+    font-weight: 700
+    font-size: 11px
+    text-transform: uppercase
+
+  &__top-text
+    margin-right: 14px
+    color: rgba(255, 255, 255, 0.55)
+    
+  &__top-list
+    display: flex
+  &__top-item
+    margin-right: 20px
+    margin-bottom: 6px
+    &:last-child
+      margin-right: 0
+  &__top-link
+    text-decoration: none
+
+  &__top-controls
+    display: flex
+    color: #fff 
+    font-size: 11px
+    font-weight: 700 
+    text-transform: uppercase
+  &__top-auth
+    margin-right: 48px
+    text-decoration: none
+
+  // &__top-search
+    
+
+  &__body
+    display: flex
+    justify-content: flex-start
+    align-items: baseline
+  &__logo
+    margin-right: 40px
+  // &__nav
+
+  &__place
+    margin-left: auto
+    text-transform: uppercase
+  &__place-text
+    margin-right: 14px
+    color: #fff 
+    font-size: 13px
+    font-weight: 600
+  // &__button
+
+
+// @include r($xl)
+//     margin-right: auto
+
+// @include rmin($sm)
+//     margin-right: 20px
+
+// @include rmin($md)
+//     margin-top: -34px
+
+// @include rmin($lg)
+//     margin-right: 57px

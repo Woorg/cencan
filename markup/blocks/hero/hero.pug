@@ -1,0 +1,21 @@
+mixin hero(data)
+    section.hero.lazy(data-bg="url('assets/images/general/hero-bg.jpg')")&attributes(attributes)
+      +header()
+      .hero__container.container
+
+        h1.hero__title Technology & Innovation in
+          span.hero__word Mining
+          span.hero__word Forestry
+          span.hero__word Energy
+      
+        .hero__exhibits 300 + Exhibits
+
+        .hero__date
+          .hero__date-start september 10-11 2020
+          .hero__date-place thunder bay - on, cle grounds
+
+        .hero__social.social
+          .social__title FOLLOW CEN-CAN
+          .social__links-w
+            a.social__link(href="#")
+              != pugHelpers.Icon.call(locals, {iconName: 'search-icon', className: 'social__icon', iconWidth: '12', iconHeight: '12'})

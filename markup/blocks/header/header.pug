@@ -1,0 +1,53 @@
+mixin header(data)
+  header.header
+    .header__container.container
+      .header__top
+        nav.header__top-nav
+          .header__top-text Information for:
+          ul.header__top-list
+            li.header__top-item
+              a.header__top-link(href="#") exhibitors
+            li.header__top-item
+              a.header__top-link(href="#") media
+            li.header__top-item
+              a.header__top-link(href="#") international
+
+        .header__top-controls
+          a.header__top-auth(href="#") sign in
+          .header__top-search.search
+              form.search__form.form.form_search
+                .form__field
+                  input.form__input(type="text", value="", placeholder="")
+                  button.form__submit(type="submit")
+                    != pugHelpers.Icon.call(locals, {iconName: 'search-icon', className: 'search__icon', iconWidth: '11', iconHeight: '16'})
+                    .form__submit-text search
+
+      .header__body
+
+        a.header__logo.logo(href="#") Cen can expo
+          // img(src='assets/images/general/logo.png', srcset='assets/images/general/logo@2x.png 2x, assets/images/general/logo@3x.png 3x' alt="Cen can expo")
+
+        nav.header__nav.nav
+          button.nav__trigger
+            != pugHelpers.Icon.call(locals, {iconName: 'menu', className: 'nav__trigger-icon', iconWidth: '36', iconHeight: '39'})
+
+          .nav__list-w
+            ul.nav__list
+              li.nav__item
+                a.nav__link(href="#activities") activities
+              li.nav__item
+                a.nav__link(href="#mining") mining
+              li.nav__item
+                a.nav__link(href="#forestry") forestry
+              li.nav__item
+                a.nav__link(href="#energy") energy
+              li.nav__item
+                a.nav__link(href="#showfloor") show floor
+                       
+        .header__place
+          .header__place-text september 10-11 2020 thunder bay - ontario
+
+        a.header__button.button.button(href="#") register
+      
+
+
