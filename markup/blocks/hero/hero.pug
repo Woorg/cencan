@@ -2,25 +2,23 @@ mixin hero(data)
     section.hero.lazy(data-bg="url('assets/images/general/hero-bg.jpg')")&attributes(attributes)
       +header()
       .hero__container.container
+        .hero__w
+          h1.hero__title Technology & Innovation in
+            span.hero__word Mining
+            span.hero__word Forestry
+            span.hero__word Energy
+        
+          .hero__exhibits 300 + Exhibits
 
-        h1.hero__title Technology & Innovation in
-          span.hero__word Mining
-          span.hero__word Forestry
-          span.hero__word Energy
-      
-        .hero__exhibits 300 + Exhibits
+          .hero__date
+            .hero__date-start september 10-11 2020
+            .hero__date-place thunder bay - on, cle grounds
 
-        .hero__date
-          .hero__date-start september 10-11 2020
-          .hero__date-place thunder bay - on, cle grounds
+          .hero__social.social
+            .social__title FOLLOW CEN-CAN
+            .social__links-w
+              a.social__link(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'fb-icon', className: 'social__icon', iconWidth: '12', iconHeight: '12'})
 
-        .hero__social.social
-          .social__title FOLLOW CEN-CAN
-          .social__links-w
-            a.social__link(href="#")
-              != pugHelpers.Icon.call(locals, {iconName: 'fb-icon', className: 'social__icon', iconWidth: '12', iconHeight: '12'})
-
-        .hero__image
-          != pugHelpers.Icon.call(locals, {iconName: 'hero-img-1', className: 'hero__image-first', iconWidth: '389', iconHeight: '269'})
-          != pugHelpers.Icon.call(locals, {iconName: 'hero-img-2', className: 'hero__image-second', iconWidth: '410', iconHeight: '384'})
-          img.hero__image-third(src="assets/images/general/hero-img-3.svg", alt="")
+        img.hero__image(src='assets/images/content/hero-img.png', srcset='assets/images/content/hero-img@2x.png 2x, assets/images/content/hero-img@3x.png 3x' alt="cen can expo")
+        

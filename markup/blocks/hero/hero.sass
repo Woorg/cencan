@@ -4,10 +4,10 @@
   background-position: 50% 0   
   background-size: cover
   background-repeat: no-repeat
-  
+  overflow: hidden
 
   @include r(1024px) 
-    background-position: 0   
+    // background-position: 0   
   
     height: auto
 
@@ -15,6 +15,10 @@
     position: relative
     padding-top: 70px
     padding-bottom: 30px
+    
+    display: flex
+    align-items: flex-end
+
   &__title
     margin-bottom: 46px
     color: #fff
@@ -53,13 +57,19 @@
   // &__social
 
   &__image
-    position: absolute
+    position: static
     bottom: 0
     right: 0
-    width: 955px
-    height: 522px
+    margin-top: -8px
+    flex-shrink: 1
     
-    @include r(1170px)
+    // width: 955px
+    // height: 522px
+    @include r(1025px)
+      position: relative
+      bottom: -31px
+
+    @include r(749px)
       display: none
       // width: 66% 
     
