@@ -1,2 +1,38 @@
 mixin stay-connected(data)
-    .stay-connected
+  .stay-connected
+    .stay-connected__container.container
+      .stay-connected__w
+        h2.stay-connected__title Stay connected
+        h3.stay-connected__subtitle Sign up for cen-can expo updates
+        .stay-connected__text Pick any of the categories below and keep informed of all updates for CEN-CAN EXPO 2020.
+
+        .stay-connected__form.form.form_subscribe
+          form.form__w(action="", method="post")
+            .form__row.form__row_center
+              .form__field.form__field_radio
+                label.form__label
+                  input.form__radio(type="radio", value="mining", name="topic")
+                  .form__radio-text Mining
+
+              .form__field.form__field_radio
+                label.form__label
+                  input.form__radio(type="radio", value="mining", name="topic")
+                  .form__radio-text Forestry
+
+              .form__field.form__field_radio
+                label.form__label
+                  input.form__radio(type="radio", value="mining", name="topic")
+                  .form__radio-text Energy
+
+              .form__field.form__field_radio
+                label.form__label
+                  input.form__radio(type="radio", value="mining", name="topic")
+                  .form__radio-text All
+
+            .form__row
+              .form__field.form__field_input
+                input.form__input(type="text", value="", name="email", placeholder="Enter Email")
+
+                input.form__submit(type="submit", value="SUBSCRIBE >")
+
+            .form__note * Yes, I would like to receive emails from the Consumer Technology Association (CTA)™

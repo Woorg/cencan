@@ -1,12 +1,79 @@
 mixin footer(data)
-    footer.footer
-        .footer__in.in
-            .footer__top
-                a.footer__logo.logo(href="#")
-                    img(src='assets/images/general/logo.png', srcset='assets/images/general/logo@2x.png 2x, assets/images/general/logo@3x.png 3x' alt="Study match")
+  footer.footer
+    .footer__container.container
+      .footer__top
+        a.footer__logo.logo.logo_secondary(href="#")
+          img(src='assets/images/general/logo.png', srcset='assets/images/general/logo@2x.png 2x, assets/images/general/logo@3x.png 3x' alt="Study match")
 
-                .footer__contacts
-                    a.footer__item(href="tel:+74950959522") +7 (495) 095 95 22
-                    a.footer__item(href="mailto:studymatchservis@mail.ru") studymatchservis@mail.ru
+      .footer__body
+        .footer__col
+          .footer__text CEN-CAN is blah blah 
+        .footer__col
+          nav.footer__nav
+            ul.footer__list
+              li.footer__item
+                a.footer__link(href="#") About ces
+              li.footer__item
+                a.footer__link(href="#") Ces unveiled
+              li.footer__item
+                a.footer__link(href="#") Innovation awards
+              li.footer__item
+                a.footer__link(href="#") Gary's book club
+              li.footer__item
+                a.footer__link(href="#") Cen-can tech talk podcast
+              li.footer__item
+                a.footer__link(href="#") Promote your brand
+              li.footer__item
+                a.footer__link(href="#") Cen-can success stories
 
-            .footer__copyright © Все права защищены 2019
+        .footer__col
+          nav.footer__nav
+            ul.footer__list
+              li.footer__item
+                a.footer__link(href="#") TOPICS
+              li.footer__item
+                a.footer__link(href="#") DISCOVER
+              li.footer__item
+                a.footer__link(href="#") CONFERENCE
+              li.footer__item
+                a.footer__link(href="#") SHOW FLOOR
+              li.footer__item
+                a.footer__link(href="#") LOGISTICS
+              li.footer__item
+                a.footer__link(href="#") SCHEDULE
+              li.footer__item
+                a.footer__link(href="#") OUR PARTNERS
+        .footer__col
+          nav.footer__nav
+            h4.footer__nav-title Information for:
+            ul.footer__list
+              li.footer__item
+                a.footer__link(href="#") Exhibitors
+              li.footer__item
+                a.footer__link(href="#") Media
+              li.footer__item
+                a.footer__link(href="#") International
+
+          nav.footer__nav
+            h4.footer__nav-title Access the:
+            ul.footer__list    
+              li.footer__item
+                a.footer__link(href="#") Speaker portal
+
+      .footer__bottom
+        .footer__social.social
+          .social__title Follow cen-can
+          .social__links-w
+            a.social__link(href="#")
+              != pugHelpers.Icon.call(locals, {iconName: 'fb-icon', className: 'social__icon', iconWidth: '12', iconHeight: '12'})
+
+        nav.footer__bottom-nav
+          ul.footer__bottom-list
+            li.footer__bottom-item
+              a.footer__bottom-link(href="#") Contact us
+
+            li.footer__bottom-item
+              a.footer__bottom-link(href="#") Terms of use
+
+            li.footer__bottom-item
+              a.footer__bottom-link(href="#") Privacy

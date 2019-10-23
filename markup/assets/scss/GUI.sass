@@ -5,6 +5,10 @@
   font-weight: 700
   text-transform: uppercase
   text-decoration: none
+  @include tr(all .3s ease)
+  
+  &:hover
+    @include tr(all .3s ease)
   
   &_biggest
     padding-top: 12px
@@ -13,3 +17,49 @@
     padding-left: 32px
     color: #000000
     background-color: #fab500
+    
+    &:hover
+      background-color: darken(#fab500, 10)
+
+  &_big
+    padding-top: 6px
+    padding-right: 30px
+    padding-bottom: 5px
+    padding-left: 30px
+    color: #fff
+    font-size: 18px 
+    background: #3D7186
+    
+    &:hover
+      background-color: darken(#3D7186, 10)
+    
+  &_general
+    padding-top: 14px
+    padding-right: 20px
+    padding-bottom: 10px
+    padding-left: 20px
+    height: 42px
+    background: #FAB500
+    color: #fff 
+    line-height: 1
+    text-align: center
+
+    &:hover
+      background-color: darken(#FAB500, 10)
+      
+
+  &_cta
+    margin-top: 30px
+    padding-top: 10px
+    padding-bottom: 9px
+    padding-right: 30px
+    padding-left: 30px
+    display: inline-block
+    vertical-align: top
+    color: #3D7186
+    font-size: 18px
+    background: #FAB500 
+    text-transform: uppercase
+
+    &:hover
+      background-color: lighten(#FAB500, 10)

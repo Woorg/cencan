@@ -1,14 +1,18 @@
 .search
   display: flex
   width: 100%
+  text-decoration: none
   &__form
     flex-grow: 1
     display: flex
     width: 0
-    @include tr(all .3s ease)
   &__icon
     fill: #fff
     
+  &:hover
+    .form__submit
+      color: rgba(255, 255, 255, 0.55)
+      @include tr(color .3s ease)
   // &:hover
   //   .search__form
   //     position: absolute

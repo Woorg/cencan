@@ -23,18 +23,21 @@ html(class="no-js", lang="ru")
       |%=symbols=%
       +hero()
       main.page__inner
-        .content
-          +call-papers()
-          +featured()
-        
-        aside.side
-          +achievements()
+        .main.container
+          .content
+            +call-papers()
+            +featured()
+          
+          aside.side
+            +achievements()
 
-      +stay-connected()
-      +sections()
-      +cta()
+        +stay-connected()
+        +sections()
+        +cta()
+        
       .page__footer
         +footer()
+
 
   //- script.
   //-     var map;

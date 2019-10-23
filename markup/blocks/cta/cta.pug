@@ -1,13 +1,6 @@
 mixin cta(data)
-    section.cta&attributes(attributes)
-        .cta__in.in
-            h2.cta__title.title.title_medium Book a free consultation
-            form.cta__form.form(action="mail.php" method="post")
-                .form__row
-                    .form__field
-                        input.form__text(type="text", value="", placeholder="Your name" name="name" required)
-                   
-                    .form__field
-                        input.form__text(type="text", value="", placeholder="Your Email" name="email" required)
-                    
-                input.form__submit.button(type="submit", value="Write to us")
+  section.cta&attributes(attributes)
+    .cta__container.container
+      h2.cta__title Want to exhibit at CEN-CAN EXPO 2020?
+      h2.cta__text Showcase your brand, launch your latest products and win business at the ultimate expo for recources
+      a.cta__button.button.button_cta(href="#") ΕΧΗΙΒΙΤ

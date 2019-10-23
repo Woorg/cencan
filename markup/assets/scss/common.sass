@@ -6,6 +6,7 @@ body
   display: flex
   flex-direction: column
   min-height: 100vh
+  font-size: 18px
   color: #000000
   font-display: swap
   font-family: $o
@@ -17,10 +18,11 @@ body
     flex-direction: column
     min-height: 100vh
   &__inner
+    padding-bottom: 270px
     flex-grow: 1
     flex-shrink: 0
     flex-basis: auto
-    overflow: hidden
+    // overflow: hidden
         
 
 .container
@@ -30,9 +32,6 @@ body
   width: 100%
   max-width: 1230px
   
-  @include rmin($lg)
-    padding-right: 10px
-    padding-left: 10px
 
 img
   max-width: 100%
