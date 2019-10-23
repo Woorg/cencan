@@ -4,3 +4,10 @@
   display: flex
   flex-wrap: nowrap
   justify-content: space-between
+  
+  @include r(1024px)
+    flex-wrap: wrap
+    
+  @include r(610px)
+    padding-left: 0
+    padding-right: 0

@@ -4,6 +4,13 @@
   background-position: 50% 0   
   background-size: cover
   background-repeat: no-repeat
+  
+
+  @include r(1024px) 
+    background-position: 0   
+  
+    height: auto
+
   &__container
     position: relative
     padding-top: 70px
@@ -51,6 +58,10 @@
     right: 0
     width: 955px
     height: 522px
+    
+    @include r(1170px)
+      display: none
+      // width: 66% 
     
   &__image-first,
   &__image-second,

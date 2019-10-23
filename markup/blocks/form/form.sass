@@ -3,16 +3,31 @@
   &__row
     display: flex
     
+    @include r(610px)
+        
+      flex-wrap: wrap
+
   &__row_vert
     flex-direction: column
     
   &__row_center
     justify-content: center
     
+    @include r(470px)
+      justify-content: flex-start
+    
     .form__field_radio
       max-width: 180px
       width: 100%
       flex-grow: 0
+      
+      @include r(610px)
+        max-width: 25%
+      
+      @include r(470px)
+        max-width: 100%
+      
+
       &:last-child
         max-width: 100px
 
@@ -130,6 +145,9 @@
     font-weight: 600
     font-size: 14px 
     text-align: center
+    
+    @include r(610px)
+      line-height: 1.25
 
 
 .form_search

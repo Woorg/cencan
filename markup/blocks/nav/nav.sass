@@ -1,4 +1,5 @@
 .nav
+  position: relative
   display: flex
   &__trigger
     @include resetbutton()
@@ -8,91 +9,82 @@
     background-size: cover
     fill: #fff
     @include tr(fill .3s ease)
+    
+    @include r(1030px)
+      display: block
+      
     &:hover
       fill: darken(#fff, 10)   
       @include tr(fill .3s ease)
 
   &__trigger_active + .nav__list-w
+    position: absolute
+    z-index: 1
+    top: 100%
+    right: 0
+    padding-top: 20px
+    padding-bottom: 20px
     display: block
     @include tr(all .3s ease)
 
-    &__list-w
-      position: absolute
-      top: 100%
-      right: -20px
+    .nav__list
+      display: block
+      text-align: right
       
-      padding-top: 55px
-      padding-left: 94px
-      padding-right: 70px
-
-      display: none
-      width: 100vw
-      // height: calc(100vh - 98px)
-      height: 100vh
-      background-color: #2e2e2e
-      border-radius: 0
-      opacity: 0.89
-
-      @include tr(all .3s ease)
-      
-      @include r($m)
-        padding-top: 20px
-        padding-left: 20px
-        padding-right: 20px
+    .nav__item
+      margin-bottom: 10px
+      margin-right: 0
+      line-height: 1.25
         
-      @include rmin($sm)
-        top: 100%
-        right: -20px
-        padding-top: 150px
-        width: 470px
-        border-radius: 0 0 30px
+  // &__item
+  //   margin-bottom: 15px
+    
+  //   @include rmin($sm)
+  //     margin-bottom: 30px
 
-    // &__list
-        
-    &__item
-      margin-bottom: 15px
-      
-      @include rmin($sm)
-        margin-bottom: 30px
+  //   &:hover
+  //     .nav__link
+  //       font-weight: 700 
+  //       &:after
+  //         background-color: #ff1ec7
+  //         @include tr(all .1s ease)
 
-      &:hover
-        .nav__link
-          font-weight: 700 
-          &:after
-            background-color: #ff1ec7
-            @include tr(all .1s ease)
+  // &__item_active,
+  //   .nav__link
+  //     font-weight: 700 
+  //     &:after
+  //       background-color: #ff1ec7
+  //       @include tr(all .1s ease)
 
-    &__item_active,
-      .nav__link
-        font-weight: 700 
-        &:after
-          background-color: #ff1ec7
-          @include tr(all .1s ease)
-
-    &__link
-      position: relative
-      padding-bottom: 5px
-      color: #ffffff
-      font-family: $o
-      font-size: 16px
-      font-weight: 400
-      text-decoration: none
-      line-height: 1.3
-      &:after
-        position: absolute
-        top: 100%
-        left: 0
-        content: '' 
-        width: 91px
-        height: 4px
-        background-color: transparent
-        border-radius: 2px
-        @include tr(all .1s ease)
+  // &__link
+  //   position: relative
+  //   padding-bottom: 5px
+  //   color: #ffffff
+  //   font-family: $o
+  //   font-size: 16px
+  //   font-weight: 400
+  //   text-decoration: none
+  //   line-height: 1.3
+  //   &:after
+  //     position: absolute
+  //     top: 100%
+  //     left: 0
+  //     content: '' 
+  //     width: 91px
+  //     height: 4px
+  //     background-color: transparent
+  //     border-radius: 2px
+  //     @include tr(all .1s ease)
             
  
 
   &__list-w
     display: flex
+      
+    @include r(1030px)
+      display: none
+
+
   &__list
     display: flex
     

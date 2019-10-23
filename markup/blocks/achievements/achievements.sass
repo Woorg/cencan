@@ -4,6 +4,10 @@
   display: flex
   justify-content: flex-end
   height: 100%
+  
+  @include r(1024px)
+    margin-top: 30px
+    flex-direction: column
   &__buttons
     position: absolute
     top: -42px
@@ -12,6 +16,9 @@
     width: 100%
     display: flex
     background: transparent 
+    
+    @include r(1024px)
+      position: static
     
   &__button
     margin-bottom: 0
@@ -26,6 +33,11 @@
     display: flex
     flex-direction: column
     justify-content: space-around
+    
+    @include r(1024px)
+      flex-wrap: wrap
+      flex-direction: row
+      
   &__item
     position: relative
     padding-top: 30px
@@ -34,6 +46,10 @@
     padding-left: 10px
     color: #fff 
     text-align: center
+    
+    @include r(1024px)
+      padding-bottom: 0  
+
     &:after
       position: absolute
       bottom: 0
@@ -43,6 +59,10 @@
       height: 1px
       background: #fff
       transform: translateX(-50%) 
+      
+      @include r(1024px)
+        display: none
+        
     &:last-child
       &:after
         display: none

@@ -12,12 +12,22 @@
     padding-bottom: 10px
     display: flex
     justify-content: space-between
+      
+    @include r(610px)
+      padding-bottom: 20px
+      flex-wrap: wrap
+    
   &__top-nav
     display: flex
     color: #fff 
     font-weight: 700
     font-size: 11px
     text-transform: uppercase
+    
+    @include r(610px)
+      margin-bottom: 20px
+      max-width: 100%
+      width: 100%
 
   &__top-text
     margin-right: 16px
@@ -26,6 +36,10 @@
     text-transform: none
   &__top-list
     display: flex
+    
+    @include r(610px)
+      flex-wrap: wrap
+
   &__top-item
     margin-right: 20px
     margin-bottom: 6px
@@ -70,14 +84,39 @@
     display: flex
     justify-content: flex-start
     align-items: flex-end
+    
+    @include r(610px)
+      justify-content: center
+      align-items: center
+      flex-wrap: wrap
+    
+  &__nav
+    @include r(1030px)
+      margin-left: 14px
+      order: 3
+      
+    @include r(610px)
+      order: 0
+
   &__logo
     margin-right: 40px
+    
+    
+    @include r(1030px)
+      margin-right: auto
+      margin-left: 0
 
   &__place
     margin-left: auto
     display: flex
     align-items: center
     text-transform: uppercase
+    @include r(610px)
+      margin-top: 20px
+      margin-right: auto
+      margin-left: 0
+      flex-wrap: wrap
+      
   &__place-text
     margin-right: 14px
     max-width: 162px
@@ -86,3 +125,21 @@
     font-weight: 600
     text-align: right
     line-height: 1.4
+    
+    
+    @include r(610px)
+      margin-right: auto
+      margin-bottom: 10px
+      margin-left: auto
+      text-align: left
+      max-width: 100%
+      width: 100%
+
+  &__button
+    @include r(1030px)
+      order: 2
+      
+    @include r(610px)
+      margin-right: auto
+      margin-left: 0
+      order: 3
