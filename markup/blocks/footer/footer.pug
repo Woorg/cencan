@@ -61,12 +61,30 @@ mixin footer(data)
                 a.footer__link(href="#") Speaker portal
 
       .footer__bottom
-        .footer__social.social
-          .social__title Follow cen-can
-          .social__links-w
-            a.social__link(href="#")
-              != pugHelpers.Icon.call(locals, {iconName: 'fb-icon', className: 'social__icon', iconWidth: '12', iconHeight: '12'})
+        .footer__links
+            .footer__social.social
+              .social__title FOLLOW CEN-CAN
+              .social__links-w
+                a.social__link(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'fb-icon', className: 'social__icon', iconWidth: '11', iconHeight: '22'})
+                a.social__link(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'twitter-icon', className: 'social__icon', iconWidth: '20', iconHeight: '16'})
+                a.social__link(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'instagram-icon', className: 'social__icon', iconWidth: '19', iconHeight: '20'})
+                a.social__link(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'youtube-icon', className: 'social__icon', iconWidth: '22', iconHeight: '16'})
+                a.social__link(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'rss-icon', className: 'social__icon', iconWidth: '19', iconHeight: '20'})
 
+            .footer__app.app
+              .app__title DOWNLOAD THE APP
+
+              .app__links-w
+                .app__link(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'iphone-icon', className: 'social__icon', iconWidth: '18', iconHeight: '21'})
+                .app__link(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'android-icon', className: 'social__icon', iconWidth: '18', iconHeight: '22'})
+                
         nav.footer__bottom-nav
           ul.footer__bottom-list
             li.footer__bottom-item

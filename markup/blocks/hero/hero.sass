@@ -1,6 +1,7 @@
 .hero
   position: relative
-  height: 715px
+  // height: 715px
+  background-color: #1c3343
   background-position: 50% 0   
   background-size: cover
   background-repeat: no-repeat
@@ -11,6 +12,7 @@
   
     height: auto
 
+
   &__container
     position: relative
     padding-top: 70px
@@ -18,6 +20,12 @@
     
     display: flex
     align-items: flex-end
+
+    // @include r(1025px)
+    //   padding-bottom: 72px
+
+    @include r(610px)
+      padding-bottom: 72px
 
   &__title
     margin-bottom: 46px
@@ -54,19 +62,22 @@
     color: #FFF
     font-weight: 300
 
-  // &__social
+  &__social
+    margin-right: auto
+    @include r(895px)
+      margin-bottom: 15px
 
   &__image
-    position: static
-    bottom: 0
+    position: relative
+    bottom: -31px
     right: 0
-    margin-top: -8px
+    // margin-top: -8px
     flex-shrink: 1
     
     // width: 955px
     // height: 522px
     @include r(1025px)
-      position: relative
+      // position: relative
       bottom: -31px
 
     @include r(749px)
@@ -94,3 +105,62 @@
     right: 70px
     @include bg($hero-img-3)
 
+
+  &__links
+    display: flex
+    width: 545px
+    @include r(895px)
+      max-width: 284px
+      width: 100%
+      flex-wrap: wrap
+
+  &__buttons
+    position: absolute
+    bottom: 0
+    // left: 0
+    right: 15px
+    max-width: 288px
+    width: 100%
+    display: flex
+    background: transparent 
+    
+    @include r(610px)
+      left: 15px
+      right: auto
+      max-width: 300px
+    
+  &__button
+    margin-bottom: 0
+    margin-right: 2px
+    flex-grow: 1
+    color: #1b3242
+    &:last-child
+      margin-right: 0
+
+
+.hero_inner
+  .hero__container
+    height: 580px
+  .hero__w
+    height: 100vh
+    display: flex
+    flex-direction: column
+
+  .hero__title
+    margin-top: auto
+    margin-bottom: auto
+    color: #fab500
+    font-family: $o
+    font-size: 72px
+
+    font-weight: 800
+    line-height: 1
+
+
+.hero_theme_forest
+  .hero__image
+    bottom: 100px
+  
+.hero_theme_mining
+  .hero__image
+    right: 70px
