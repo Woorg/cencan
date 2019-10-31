@@ -70,7 +70,7 @@
   &__image
     position: relative
     bottom: -31px
-    right: 0
+    right: 250px
     // margin-top: -8px
     flex-shrink: 1
     
@@ -79,6 +79,9 @@
     @include r(1025px)
       // position: relative
       bottom: -31px
+      
+    @include r(895px)
+      right: 100px
 
     @include r(749px)
       display: none
@@ -138,7 +141,7 @@
       margin-right: 0
 
 
-.hero_inner
+.hero_theme_main
   .hero__container
     height: 580px
   .hero__w
@@ -155,6 +158,9 @@
 
     font-weight: 800
     line-height: 1
+  
+  .hero__image
+    right: 0
 
 
 .hero_theme_forest

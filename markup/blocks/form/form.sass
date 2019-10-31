@@ -15,6 +15,8 @@
     
     @include r(470px)
       justify-content: flex-start
+      
+
     
     .form__field_radio
       max-width: 180px
@@ -42,6 +44,33 @@
       &:before
         top: 4px
         left: 4px
+  
+  &__row_theme_full,
+  &__row_theme_half
+    .form__field
+      margin-bottom: 20px
+    
+  &__row_theme_half
+    @include r(910px)
+      flex-wrap: wrap
+    .form__field
+      @include r(910px)
+        max-width: 100%
+        width: 100%
+      &:first-child
+        margin-right: 20px
+        @include r(910px)
+          margin-right: 0
+              
+        
+  &__row_bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+    
+    @include r(910px)
+      flex-wrap: wrap
+
   &__col
     width: 100%
     flex-grow: 1
@@ -215,3 +244,16 @@
     &:hover
       color: darken(#fff, 10)
       @include tr(all .3s ease)
+      
+
+.form_theme_faq
+  .form__message
+    min-height: 112px
+  .form__input
+    height: 33px
+
+  .form__submit
+    @include r(892px)
+      margin-top: 20px
+      
+      

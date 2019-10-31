@@ -88,6 +88,11 @@ import svg4everybody from 'svg4everybody';
       'index-energy',
       'index-forestry',
       'demos',
+      'demo',
+      'exhibitors',
+      'technical'
+
+
 
     ]);
 

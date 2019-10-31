@@ -1,0 +1,30 @@
+mixin faq(data)
+  .faq&attributes(attributes)
+    a.faq__link(href="#") 
+      != pugHelpers.Icon.call(locals, {iconName: 'question-icon', className: 'faq__icon', iconWidth: '16', iconHeight: '16'})
+      | Frequently asked questions
+    .faq__w
+      h2.faq__title You don’t see your question? 
+        span Go ahead and ask...
+      .faq__form.form.form_theme_faq
+        form.form__w(action="", method="post")
+          .form__row.form__row_theme_full
+            .form__field
+              textarea.form__message(name="" placeholder="Your Question" value="")
+
+          .form__row.form__row_theme_full
+            .form__field
+              input.form__input(name="" value="" placeholder="Email:")
+
+          .form__row.form__row_theme_half
+            .form__field
+              input.form__input(name="" value="" placeholder="Your Name:")
+
+            .form__field
+              input.form__input(name="" value="" placeholder="Your Company:")
+
+          .form__row.form__row_bottom
+            .form__captcha
+              img(src="assets/images/content/recaptcha.png", alt="")
+
+            input.form__submit.button.button_big.button_big_orange(type="submit", value="Submit question")

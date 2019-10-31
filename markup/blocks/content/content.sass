@@ -9,3 +9,203 @@
   @include r(1024px)
     padding-right: 0
     max-width: 100%
+
+  &__top
+    border-bottom: 1px solid #898989
+    margin-bottom: 25px
+  &__title
+    margin-bottom: 14px
+
+  &__meta
+    margin-top: 17px
+    margin-bottom: 20px
+    display: flex
+
+    @include r(650px)
+      flex-wrap: wrap
+
+  &__meta-item
+    margin-right: 77px
+    display: flex
+    flex-direction: column
+    font-size: 16px
+    @include r(650px)
+      margin-bottom: 15px
+    &:last-child
+      margin-right: 0
+
+  &__meta-term
+    margin-bottom: 10px
+    display: flex
+    align-items: center
+    font-weight: 700
+    color: #898989
+
+  &__meta-icon
+    margin-right: 5px
+    fill: #898989
+
+  &__meta-desc
+    font-weight: 300
+    color: #000
+
+  &__row
+    padding-bottom: 50px
+    display: flex
+    @include r(895px)
+      padding-bottom: 20px
+      flex-wrap: wrap
+
+  &__col
+    display: flex
+    flex-direction: column
+    
+  &__image
+    position: relative
+    padding-bottom: 0
+    max-width: 444px
+    width: 100%
+    flex-shrink: 0
+    
+    @include r(895px)
+      margin-bottom: 50px
+
+  &__control
+    position: absolute
+    left: 0
+    right: 0
+    padding-top: 15px
+    padding-right: 18px
+    padding-left: 18px
+    display: flex
+    // flex-wrap: wrap
+    justify-content: space-between
+    
+    @include r(425px)
+      padding-right: 0
+      padding-left: 0
+      
+    
+  &__control-links
+    display: flex
+    
+  &__control-link
+    margin-right: 20px
+    text-decoration: none
+    &:last-child
+      margin-right: 0
+
+  &__text
+    margin-left: 140px
+    padding-top: 92px
+    color: #000000
+    font-size: 16px
+    font-weight: 300
+    line-height: 1.4
+    @include r(1024px)
+      margin-left: 30px
+    
+    @include r(895px)
+      margin-top: 30px
+      margin-left: 0
+      padding-top: 0
+
+  &__gallery
+    margin-top: auto
+    // margin-right: -20px
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-start
+
+    @include r(1024px)
+      justify-content: flex-start
+
+  &__gallery-item
+    position: relative
+    margin-right: 20px
+    margin-top: 20px
+    // max-width: 22.2%
+    max-width: 130px
+    width: 100%
+    flex-shrink: 0
+    flex-grow: 1
+    // flex-basis: 22.2%
+    @include r(1024px)
+      max-width: 130px
+    img
+      width: 100%
+    &:last-child
+      margin-right: 0
+  
+  &__gallery-title
+    position: absolute
+    top: 23px
+    right: 12px
+    left: 12px
+    color: #ffffff
+    font-size: 14px
+    font-weight: 800
+    
+  &__bottom
+    border-top: 1px #898989 solid
+    padding-top: 10px
+    display: flex
+    
+    @include r(749px)
+      flex-wrap: wrap
+      
+  &__faq
+    margin-right: 20px
+    max-width: 895px
+    width: 100%
+    flex-grow: 1
+    
+    @include r(749px)
+      margin-right: 0
+      
+  &__side
+    margin-top: 50px
+    max-width: 285px
+    width: 100%
+    flex-shrink: 0
+    
+    @include r(749px)
+      margin-top: 20px
+    
+
+
+
+.content_theme_full
+  padding-top: 0
+  padding-right: 0
+  max-width: 100%
+
+  @include r(1024px)
+    padding-left: 15px
+    padding-right: 15px
+
+.content_theme_single
+  .content__image
+    max-width: 590px
+  
+  .content__col
+    margin-left: 23px
+    flex-wrap: wrap
+    @include r(895px)
+      margin-top: 0
+      margin-left: 0
+  .content__text
+    margin-left: 0
+    padding-top: 30px
+    // @include r(1024px)
+    //   margin-left: 0
+    
+    @include r(895px)
+      margin-top: 0
+      margin-left: 0
+      padding-top: 20px
+
+    h2
+      color: #3D7186
+      font-weight: 700
+
