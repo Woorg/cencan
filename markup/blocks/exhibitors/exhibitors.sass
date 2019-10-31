@@ -1,0 +1,233 @@
+.exhibitors
+  overflow: hidden
+  &__title
+    margin-bottom: 0
+  &__subtitle
+    margin-bottom: 30px
+    font-weight: 700 
+    color: #3D7186
+  &__featured
+    margin-right: -20px
+    margin-top: 50px
+    display: flex
+    flex-wrap: wrap
+    @include r(481px)
+      margin-right: 0
+  &__featured-item
+    margin-right: 20px
+    margin-bottom: 20px
+    max-width: 285px
+    width: 100%
+    color: #3D7186
+    text-align: center
+    @include r(636px)
+      max-width: 45.6%
+      
+    @include r(481px)
+      margin-right: 0
+      max-width: 100%
+      
+    &:last-child
+      margin-right: 0
+
+  &__featured-link
+    color: #3D7186 
+    display: block
+    text-decoration: none
+
+  &__featured-image
+    margin-bottom: 10px
+
+  &__featured-title
+    font-weight: 700 
+    font-size: 16px 
+  &__alphabet
+    margin-top: 20px
+    margin-bottom: 30px
+    color: #898989
+  &__alphabet-title
+    margin-bottom: 20px
+    font-weight: 700 
+    font-size: 26px
+
+  &__alphabet-list
+    display: flex
+    flex-wrap: wrap
+
+  &__alphabet-index
+    margin-right: 20px
+    color: #898989
+    font-size: 26px
+    font-weight: 400 
+    text-decoration: none
+    text-transform: uppercase
+    &:last-child
+      margin-right: 0
+    
+    &:hover
+      color: darken(#898989, 10)
+
+
+  &__row
+    display: flex
+    flex-wrap: nowrap
+  
+  &__w
+    margin-right: 20px
+    max-width: 876px
+    width: 100%
+
+  &__search
+    border: 1px solid #3D7186 
+    margin-bottom: 5px
+    padding-top: 20px
+    padding-right: 24px
+    padding-bottom: 20px
+    padding-left: 24px
+    background: rgba(61, 113, 134, .05)
+    
+
+  &__search-title
+    margin-bottom: 30px
+    color: #3D7186
+    font-weight: 800
+    font-size: 24px
+  // &__search-form
+
+
+  // &__list
+
+
+  &__item
+    border-bottom: 1px solid #898989 
+    padding-top: 25px
+    padding-bottom: 25px
+
+  // &__item-top
+
+  &__item-title
+    margin-bottom: 5px
+    color: #3D7186
+    font-size: 18px
+    font-weight: 700 
+
+  &__item-category
+    margin-bottom: 5px
+    color: #3D7186
+    font-size: 16px
+    font-weight: 400 
+
+  &__item-body
+    display: flex
+    flex-wrap: nowrap
+    
+    @include r(650px)
+      flex-wrap: wrap
+  
+  &__item-body_w_image
+      .exhibitors__item-text
+        margin-right: 30px
+        // max-width: 625px
+        // width: 100%
+        flex-shrink: 1
+
+      .exhibitors__item-image
+        margin-top: -30px
+        margin-left: auto
+        flex-shrink: 0
+        @include r(650px)
+          margin-top: 10px
+          margin-bottom: 10px
+          margin-left: 0
+          order: -1
+
+  &__item-text
+    font-weight: 300
+    line-height: 1.4
+    
+  &__meta
+    padding-top: 30px
+    display: flex
+    align-items: center
+    
+    @include r(650px)
+      flex-wrap: wrap
+    
+  &__meta-link
+    margin-right: 20px
+    text-decoration: none
+    &:last-child
+      margin-right: 0
+
+  &__buttons
+    margin-left: auto
+    display: flex
+    
+    @include r(650px)
+      margin-top: 20px
+      margin-left: 0
+      flex-wrap: wrap
+      
+  &__button
+    margin-left: 20px
+    
+    @include r(420px)
+      margin-top: 10px
+      margin-left: 0
+      max-width: 100%
+      width: 100%
+    &:first-child
+      margin-left: 0
+      
+  &__pagination-w
+    margin-top: 25px
+    display: flex
+      
+  &__pagination
+    margin-left: auto
+      
+  &__side
+    max-width: 284px
+    width: 100%
+    
+  &__s-block
+    margin-bottom: 33px
+    padding-top: 20px
+    padding-right: 20px
+    padding-bottom: 20px
+    padding-left: 20px
+    height: 267px 
+    background: #D0D0D0
+    color: #fff 
+    text-align: center
+    
+  &__s-block_reg
+    background: #EC6746
+    
+  &__auth
+    display: flex
+    justify-content: center
+    color: #fff
+    font-size: 22px
+    font-weight: 400
+    
+  &__auth-link
+    color: #fff 
+    font-size: 24px
+    font-weight: 800 
+    text-decoration: none
+    
+    &:hover
+      opacity: .9
+
+    
+  &__auth-sep
+    padding-left: 5px
+    padding-right: 5px
+  
+  &__s-text
+    font-size: 22px
+    line-height: 1.4
+    span
+      font-weight: 800 
+

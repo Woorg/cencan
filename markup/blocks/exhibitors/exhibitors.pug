@@ -1,0 +1,185 @@
+mixin exhibitors(data)
+  section.exhibitors&attributes(attributes)
+    h1.exhibitors__title.title Exhibitors
+    h2.exhibitors__subtitle Featured Exhibitor 1
+
+    ul.exhibitors__featured
+      li.exhibitors__featured-item
+        a.exhibitors__featured-link(href="#")
+          .exhibitors__featured-image
+            img(src="assets/images/content/demo-img.jpg", alt="")
+          .exhibitors__featured-title Featured Exhibitor 1
+      li.exhibitors__featured-item
+        a.exhibitors__featured-link(href="#")
+          .exhibitors__featured-image
+            img(src="assets/images/content/demo-img.jpg", alt="")
+          .exhibitors__featured-title Featured Exhibitor 2
+      li.exhibitors__featured-item
+        a.exhibitors__featured-link(href="#")
+          .exhibitors__featured-image
+            img(src="assets/images/content/demo-img.jpg", alt="")
+          .exhibitors__featured-title Featured Exhibitor 3
+      li.exhibitors__featured-item
+        a.exhibitors__featured-link(href="#")
+          .exhibitors__featured-image
+            img(src="assets/images/content/demo-img.jpg", alt="")
+          .exhibitors__featured-title Featured Exhibitor 4
+
+    .exhibitors__alphabet
+      .exhibitors__alphabet-title See Exhibitors
+      .exhibitors__alphabet-list
+        a.exhibitors__alphabet-index(href="#") A
+        a.exhibitors__alphabet-index(href="#") B
+        a.exhibitors__alphabet-index(href="#") C
+        a.exhibitors__alphabet-index(href="#") D
+        a.exhibitors__alphabet-index(href="#") F
+        a.exhibitors__alphabet-index(href="#") G
+        a.exhibitors__alphabet-index(href="#") H
+        a.exhibitors__alphabet-index(href="#") J
+        a.exhibitors__alphabet-index(href="#") K
+        a.exhibitors__alphabet-index(href="#") L
+        a.exhibitors__alphabet-index(href="#") M
+        a.exhibitors__alphabet-index(href="#") N
+        a.exhibitors__alphabet-index(href="#") P
+        a.exhibitors__alphabet-index(href="#") Q
+        a.exhibitors__alphabet-index(href="#") R
+        a.exhibitors__alphabet-index(href="#") S
+        a.exhibitors__alphabet-index(href="#") T
+        a.exhibitors__alphabet-index(href="#") V
+        a.exhibitors__alphabet-index(href="#") X
+        a.exhibitors__alphabet-index(href="#") Z
+        a.exhibitors__alphabet-index(href="#") W
+        a.exhibitors__alphabet-index(href="#") Y
+        a.exhibitors__alphabet-index(href="#") 0
+        a.exhibitors__alphabet-index(href="#") 1
+        a.exhibitors__alphabet-index(href="#") 2
+        a.exhibitors__alphabet-index(href="#") 3
+        a.exhibitors__alphabet-index(href="#") 4
+        a.exhibitors__alphabet-index(href="#") 5
+        a.exhibitors__alphabet-index(href="#") 6
+        a.exhibitors__alphabet-index(href="#") 7
+        a.exhibitors__alphabet-index(href="#") 8
+        a.exhibitors__alphabet-index(href="#") 9
+
+
+    .exhibitors__row
+      .exhibitors__w
+        .exhibitors__search
+          h2.exhibitors__search-title Search Company by...
+
+          .exhibitors__search-form.form.form_theme_faq
+            form.form__w(action="" method="post")
+              .form__row.form__row_theme_third
+                .form__field
+                  input.form__input(type="text", name="", value="", placeholder="Name")
+                .form__field
+                  select.form__select(name="")
+                    option(value="") Category 1
+                    option(value="") Category 2
+                    option(value="") Category 3
+                .form__field
+                  select.form__select(name="")
+                    option(value="") Location 1
+                    option(value="") Location 2
+                    option(value="") Location 3
+
+              .form__row.form__row_radio
+                .form__field.form__field_radio
+                  label.form__label
+                    input.form__radio(type="radio", value="fav", name="some")
+                    .form__radio-text Favourites
+
+                .form__field.form__field_radio
+                  label.form__label
+                    input.form__radio(type="radio", value="accepting", name="some")
+                    .form__radio-text Accepting resumes 
+        
+              .form__row.form__row_bottom
+                .form__captcha
+                  img(src="assets/images/content/recaptcha.png", alt="")
+
+                input.form__submit.button.button_big.button_big_orange(type="submit", value="Submit")
+
+        ul.exhibitors__list
+          li.exhibitors__item
+            .exhibitors__item-top
+              h3.exhibitors__item-title Company Name
+              .exhibitors__item-category Booth
+            .exhibitors__item-body
+              .exhibitors__item-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+            .exhibitors__meta
+              a.exhibitors__meta-link(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'star-icon', className: 'exhibitors__meta-icon', iconWidth: '21', iconHeight: '21'})
+              a.exhibitors__meta-link(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'exhibitors-icon-2', className: 'exhibitors__meta-icon', iconWidth: '21', iconHeight: '21'})
+              a.exhibitors__meta-link(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'exhibitors-icon-3', className: 'exhibitors__meta-icon', iconWidth: '21', iconHeight: '21'})
+              a.exhibitors__meta-link(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'edit-icon', className: 'exhibitors__meta-icon', iconWidth: '20', iconHeight: '20'})
+              a.exhibitors__meta-link(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'exhibitors-icon-4', className: 'exhibitors__meta-icon', iconWidth: '20', iconHeight: '20'})
+
+
+              .exhibitors__buttons
+                a.exhibitors__button.button.button_big.button_big_blue(href="#") More details
+                a.exhibitors__button.button.button_big.button_big_blue(href="#") Visit site
+          
+          li.exhibitors__item
+            .exhibitors__item-top
+              h3.exhibitors__item-title Company Name
+              .exhibitors__item-category Booth
+            .exhibitors__item-body.exhibitors__item-body_w_image
+              .exhibitors__item-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              
+              .exhibitors__item-image
+                img(src='assets/images/content/company-image.jpg' )
+
+            .exhibitors__meta
+              a.exhibitors__meta-link(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'star-icon', className: 'exhibitors__meta-icon', iconWidth: '21', iconHeight: '21'})
+              a.exhibitors__meta-link(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'exhibitors-icon-2', className: 'exhibitors__meta-icon', iconWidth: '21', iconHeight: '21'})
+              a.exhibitors__meta-link(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'exhibitors-icon-3', className: 'exhibitors__meta-icon', iconWidth: '21', iconHeight: '21'})
+              a.exhibitors__meta-link(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'edit-icon', className: 'exhibitors__meta-icon', iconWidth: '20', iconHeight: '20'})
+              a.exhibitors__meta-link(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'exhibitors-icon-4', className: 'exhibitors__meta-icon', iconWidth: '20', iconHeight: '20'})
+
+
+              .exhibitors__buttons
+                a.exhibitors__button.button.button_big.button_big_blue(href="#") More details
+                a.exhibitors__button.button.button_big.button_big_blue(href="#") Visit site
+
+        .exhibitors__pagination-w
+          .exhibitors__pagination.pagination
+            a.pagination__link.pagination__arrow.pagination__prev(href="") 
+              != pugHelpers.Icon.call(locals, {iconName: 'arrow', className: 'pagination__arrow-icon', iconWidth: '13', iconHeight: '14'})
+            a.pagination__link(href="") 1
+            a.pagination__link(href="") 2
+            a.pagination__link(href="") 3
+            a.pagination__link(href="") 4
+            a.pagination__link(href="") 5
+            a.pagination__link(href="") 6
+            a.pagination__link(href="") 7
+            a.pagination__link(href="") 8
+            a.pagination__link(href="") 9
+            a.pagination__link.pagination__arrow.pagination__next(href="") 
+              != pugHelpers.Icon.call(locals, {iconName: 'arrow', className: 'pagination__arrow-icon', iconWidth: '13', iconHeight: '14'})
+
+
+        
+
+      .exhibitors__side
+        .exhibitors__s-block.exhibitors__s-block_reg
+          .exhibitors__auth
+            a.exhibitors__auth-link(href='#') Login
+            .exhibitors__auth-sep or
+            a.exhibitors__auth-link(href='#') Register
+
+          .exhibitors__s-text to enhance your Expo visit with our <span> Interactive Tools</span> They will be all  accessible &  manageable through your dashboard
+
+        .exhibitors__s-block
+
+        .exhibitors__s-block

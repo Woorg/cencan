@@ -1,0 +1,90 @@
+mixin technical(data)
+  section.technical
+
+    .technical__top
+      h1.technical__title.title Technical Title 
+      dl.technical__meta
+        div.technical__meta-item
+          dt.technical__meta-term
+            != pugHelpers.Icon.call(locals, {iconName: 'clock-icon', className: 'technical__meta-icon', iconWidth: '16', iconHeight: '16'})
+            | Time
+          dd.technical__meta-desc Friday 10-11 2020, 11:00pm - 6:00pm
+
+        div.technical__meta-item
+          dt.technical__meta-term
+            != pugHelpers.Icon.call(locals, {iconName: 'marker-icon', className: 'technical__meta-icon', iconWidth: '16', iconHeight: '16'})
+            | Location
+          dd.technical__meta-desc Thunder Bay - ON, CLE Grounds
+
+      .technical__desc Forest Life Expo is about engagement Seeing & Doing. We are encouraging our exhibitors to showcase their products and services by letting attendees see the sawdust flying, the engines starting.  This page will highlight all of our Demos and when a person will click on an image it will be directed to more detailed
+
+    ul.technical__list
+      li.technical__item
+        .technical__item-body
+          .technical__image
+            img(src='assets/images/content/speaker-photo-1.jpg' alt='')
+
+          .technical__item-w
+            .technical__speaker Name of the Speaker 
+            .technical__position Title of the Speaker 
+          
+            .technical__text Forest Life Expo is about engagement Seeing & Doing. We are encouraging our exhibitors to showcase their products and services by letting attendees see the sawdust flying, the engines starting. This page will highlight all of our Demos and when a person will click on an image it will be directed to more detailed page. This demo page was from a year ago and as we begin to add new exhibitors we will be updating this page.  If you would like to keep up to date on what demonstrations are being added I have attached a link below to our new Stay Connected application.
+
+        .technical__item-bottom
+
+          .technical__control
+            .technical__control-links
+              a.technical__control-link(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'star-icon', className: 'technical__control-icon', iconWidth: '21', iconHeight: '25'})
+              a.technical__control-link(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'calendar-icon', className: 'technical__control-icon', iconWidth: '21', iconHeight: '25'})
+              a.technical__control-link(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'edit-icon', className: 'technical__control-icon', iconWidth: '19', iconHeight: '25'})
+
+            .technical__control-share.social.social_theme_dark
+              .social__title Share
+              .social__links-w
+                a.social__link(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'fb-icon', className: 'social__icon', iconWidth: '13', iconHeight: '20'})
+                a.social__link(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'twitter-icon', className: 'social__icon', iconWidth: '21', iconHeight: '20'})
+                a.social__link(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'linkedin-icon', className: 'social__icon', iconWidth: '19', iconHeight: '20'})
+
+
+
+      li.technical__item
+        .technical__item-body
+          .technical__image
+            img(src='assets/images/content/speaker-photo-2.jpg' alt='')
+
+          .technical__item-w
+            .technical__speaker Name of the Speaker 
+            .technical__position Title of the Speaker 
+          
+            .technical__text Forest Life Expo is about engagement Seeing & Doing. We are encouraging our exhibitors to showcase their products and services by letting attendees see the sawdust flying, the engines starting. This page will highlight all of our Demos and when a person will click on an image it will be directed to more detailed page. This demo page was from a year ago and as we begin to add new exhibitors we will be updating this page.  If you would like to keep up to date on what demonstrations are being added I have attached a link below to our new Stay Connected application.
+
+        .technical__item-bottom
+
+          .technical__control
+            .technical__control-links
+              a.technical__control-link(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'star-icon', className: 'technical__control-icon', iconWidth: '21', iconHeight: '25'})
+              a.technical__control-link(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'calendar-icon', className: 'technical__control-icon', iconWidth: '21', iconHeight: '25'})
+              a.technical__control-link(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'edit-icon', className: 'technical__control-icon', iconWidth: '19', iconHeight: '25'})
+
+            .technical__control-share.social.social_theme_dark
+              .social__title Share
+              .social__links-w
+                a.social__link(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'fb-icon', className: 'social__icon', iconWidth: '13', iconHeight: '20'})
+                a.social__link(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'twitter-icon', className: 'social__icon', iconWidth: '21', iconHeight: '20'})
+                a.social__link(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'linkedin-icon', className: 'social__icon', iconWidth: '19', iconHeight: '20'})
+
+
+    .technical__button-w
+      a.technical__button.button.button_big.button_big_orange(href='#') Purchase Ticket

@@ -30,7 +30,7 @@ import svg4everybody from 'svg4everybody';
       'font-weight: 400'
   ].join(';');
 
-  console.log('%c developed by igor gorlov gorlov https://webjeb.ru', styles);
+  console.log('%c developed by igor gorlov https://webjeb.ru', styles);
 
 
    /* 
@@ -90,9 +90,8 @@ import svg4everybody from 'svg4everybody';
       'demos',
       'demo',
       'exhibitors',
-      'technical'
-
-
+      'technical',
+      'featured'
 
     ]);
 

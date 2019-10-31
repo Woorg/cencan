@@ -1,5 +1,14 @@
 .featured
   overflow: hidden
+  &__title
+    margin-bottom: 20px
+  &__desc
+    margin-bottom: 70px
+    color: #000000
+    font-size: 16px
+    font-weight: 300
+    line-height: 1.4
+
   &__list
     display: flex
     justify-content: space-between
@@ -49,3 +58,38 @@
   &__item-title
     font-size: 16px
     font-weight: 700 
+
+
+
+
+.featured_theme_second
+  .featured__list-title
+    margin-bottom: 35px
+    color: #000
+    font-size: 30px
+    font-weight: 700 
+  .featured__list
+    margin-bottom: 80px
+    margin-right: -20px
+    flex-wrap: wrap
+    justify-content: flex-start
+    
+  .featured__item
+    margin-bottom: 20px
+    margin-right: 20px
+    max-width: 262px
+    flex-shrink: 0
+    flex-grow: 0
+    @include r(1024px)
+      max-width: 338px
+      
+    @include r(610px)
+      margin-bottom: 20px
+      max-width: 100%
+      
+  .featured__item-title
+    background: #171414
+    color: #fff
+    font-size: 30px
+    font-weight: 700 
+

@@ -46,7 +46,8 @@
         left: 4px
   
   &__row_theme_full,
-  &__row_theme_half
+  &__row_theme_half,
+  &__row_theme_third
     .form__field
       margin-bottom: 20px
     
@@ -62,6 +63,19 @@
         @include r(910px)
           margin-right: 0
               
+  &__row_theme_third
+    .form__field
+      &:nth-child(1),
+      &:nth-child(2)
+        margin-right: 20px
+        
+        @include r(610px)
+          margin-right: 0
+      @include r(610px)
+        max-width: 100%
+        width: 100%
+        
+
         
   &__row_bottom
     display: flex
@@ -148,7 +162,8 @@
       opacity: 0
 
   &__input,
-  &__message
+  &__message,
+  &__select
     border: 1px solid #d0d0d0
     padding-left: 5px
     padding-right: 5px
@@ -160,6 +175,11 @@
       color: #b3b2b2
       font-size: 12px
       font-weight: 600 
+
+  &__select
+    color: #b3b2b2
+    font-size: 12px
+    font-weight: 600 
 
   &__message
     padding-top: 5px
@@ -249,7 +269,8 @@
 .form_theme_faq
   .form__message
     min-height: 112px
-  .form__input
+  .form__input,
+  .form__select
     height: 33px
 
   .form__submit
@@ -257,3 +278,9 @@
       margin-top: 20px
       
       
+  .form__row_radio
+    .form__field
+      margin-right: 50px
+      flex-grow: 0
+      &:last-child
+        margin-right: 0

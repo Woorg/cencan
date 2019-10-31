@@ -6,20 +6,18 @@ html(class="no-js", lang="ru")
   
   //- include ../blocks/hero/hero.pug
   //- include ../blocks/call-papers/call-papers.pug
-  //- include ../blocks/featured/featured.pug
+  
+  include ../blocks/featured/featured.pug
   //- include ../blocks/achievements/achievements.pug
   //- include ../blocks/stay-connected/stay-connected.pug
   //- include ../blocks/faq/faq.pug
-  include ../blocks/exhibitors/exhibitors.pug
+  //- include ../blocks/technical/technical.pug
   
   //- include ../blocks/sections/sections.pug
   include ../blocks/side/side.pug
   include ../blocks/banner/banner.pug
 
-
   //- include ../blocks/cta/cta.pug
-
-
 
   include ../blocks/footer/footer.pug
 
@@ -31,9 +29,7 @@ html(class="no-js", lang="ru")
       +header()
       main.page__inner
         .main.container
-          +exhibitors()
-          
-    
+          +featured-products()
         
       .page__footer
         +footer()

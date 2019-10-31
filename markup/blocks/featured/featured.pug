@@ -1,18 +1,59 @@
 mixin featured(data)
-    .featured
-      ul.featured__list
-        li.featured__item
-          a.featured__link(href="#")
-            figure.featured__image
-              img(src="assets/images/content/featured-thumb-1.jpg", alt="thumb 1")
-            span.featured__item-title Featured Exhibitor
-        li.featured__item
-          a.featured__link(href="#")
-            figure.featured__image
-              img(src="assets/images/content/featured-thumb-2.jpg", alt="thumb 2")
-            span.featured__item-title Featured Product
-        li.featured__item
-          a.featured__link(href="#")
-            figure.featured__image
-              img(src="assets/images/content/featured-thumb-3.jpg", alt="thumb 3")
-            span.featured__item-title Gala Dinner / Social
+  .featured
+    ul.featured__list
+      li.featured__item
+        a.featured__link(href="#")
+          figure.featured__image
+            img(src="assets/images/content/featured-thumb-1.jpg", alt="thumb 1")
+          span.featured__item-title Featured Exhibitor
+      li.featured__item
+        a.featured__link(href="#")
+          figure.featured__image
+            img(src="assets/images/content/featured-thumb-2.jpg", alt="thumb 2")
+          span.featured__item-title Featured Product
+      li.featured__item
+        a.featured__link(href="#")
+          figure.featured__image
+            img(src="assets/images/content/featured-thumb-3.jpg", alt="thumb 3")
+          span.featured__item-title Gala Dinner / Social
+
+
+mixin featured-products(data)
+  section.featured.featured_theme_second
+    h1.featured__title.title Featured Products
+    .featured__desc Forest Life Expo is about engagement Seeing & Doing.  We are encouraging our exhibitors to showcase their products and services by letting attendees see the sawdust flying, the engines starting.  This page will highlight all of our Demos and when a person will click on an image it will be directed to more detailed page. This demo page
+    ul.featured__list
+      li.featured__item
+        a.featured__link(href="#")
+          .featured__item-title Sponsored
+          figure.featured__image
+            img(src="assets/images/content/featured-img.jpg", alt="thumb 1")
+      li.featured__item
+        a.featured__link(href="#")
+          .featured__item-title Sponsored
+          figure.featured__image
+            img(src="assets/images/content/featured-img.jpg", alt="thumb 2")
+      li.featured__item
+        a.featured__link(href="#")
+          .featured__item-title Sponsored
+          figure.featured__image
+            img(src="assets/images/content/featured-img.jpg", alt="thumb 3")
+
+      li.featured__item
+        a.featured__link(href="#")
+          .featured__item-title Sponsored
+          figure.featured__image
+            img(src="assets/images/content/featured-img.jpg", alt="thumb 4")
+
+
+    h2.featured__list-title All Featured
+
+    ul.featured__list
+      li.featured__item
+        a.featured__link(href="#")
+          figure.featured__image
+            img(src="assets/images/content/featured-img.jpg", alt="thumb 1")
+      li.featured__item
+        a.featured__link(href="#")
+          figure.featured__image
+            img(src="assets/images/content/featured-img.jpg", alt="thumb 2")
