@@ -51,9 +51,10 @@ mixin hero(data)
 mixin hero-energy(data)
   section.hero.lazy(data-bg="url('assets/images/general/hero-bg.jpg')")&attributes(attributes)
     +header()
+    .hero__title-w.container
+      h1.hero__title Energy
     .hero__container.container
       .hero__w
-        h1.hero__title Energy
 
         .hero__links
           .hero__social.social
@@ -90,9 +91,10 @@ mixin hero-energy(data)
 mixin hero-forest(data)
   section.hero.lazy(data-bg="url('assets/images/general/hero-bg.jpg')")&attributes(attributes)
     +header()
+    .hero__title-w.container
+      h1.hero__title Forestry
     .hero__container.container
       .hero__w
-        h1.hero__title Forestry
 
         .hero__links
           .hero__social.social
@@ -129,9 +131,11 @@ mixin hero-forest(data)
 mixin hero-mining(data)
   section.hero.lazy(data-bg="url('assets/images/general/hero-bg.jpg')")&attributes(attributes)
     +header()
+    .hero__title-w.container
+      h1.hero__title Mining
+
     .hero__container.container
       .hero__w
-        h1.hero__title Mining
 
         .hero__links
           .hero__social.social

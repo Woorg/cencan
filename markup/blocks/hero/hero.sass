@@ -16,7 +16,7 @@
   &__container
     position: relative
     padding-top: 70px
-    padding-bottom: 30px
+    padding-bottom: 0
     
     display: flex
     align-items: flex-end
@@ -66,6 +66,10 @@
     margin-right: auto
     @include r(895px)
       margin-bottom: 15px
+  
+  &__w
+    position: relative
+    padding-bottom: 0
 
   &__image
     position: relative
@@ -110,6 +114,11 @@
 
 
   &__links
+    // position: absolute
+    // bottom: 15px
+    // left: 15px
+    margin-top: auto
+    margin-bottom: 30px
     display: flex
     width: 545px
     @include r(895px)
@@ -145,22 +154,29 @@
   .hero__container
     height: 580px
   .hero__w
+    // position: relative
     height: 100vh
     display: flex
     flex-direction: column
 
   .hero__title
-    margin-top: auto
-    margin-bottom: auto
+    position: absolute
+    top: 50%
+    left: 15px
+    margin-bottom: 0
     color: #fab500
     font-family: $o
     font-size: 72px
 
     font-weight: 800
     line-height: 1
-  
+    transform: translateY(-50%)
   .hero__image
     right: 0
+  
+  // .hero__links
+  //   margin-top: 0
+
 
 
 .hero_theme_forest
