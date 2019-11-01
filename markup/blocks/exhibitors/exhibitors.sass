@@ -71,11 +71,16 @@
   &__row
     display: flex
     flex-wrap: nowrap
+    @include r(910px)
+      flex-wrap: wrap      
   
   &__w
     margin-right: 20px
     max-width: 876px
     width: 100%
+    
+    @include r(910px)
+      margin-right: 0
 
   &__search
     border: 1px solid #3D7186 
